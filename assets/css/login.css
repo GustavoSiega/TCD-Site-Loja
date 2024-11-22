@@ -4,19 +4,34 @@
     box-sizing: border-box;
 }
 
-/* Estilos Gerais */
 body {
+    position: relative;
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: #f5f5f5;
 }
 
-/* Container do Formulário de Login */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../img/img-sobre-nos.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.8;
+    z-index: -1;
+}
+
 .login-container {
     background-color: #fff;
     width: 350px;
@@ -26,20 +41,17 @@ body {
     text-align: center;
 }
 
-/* Logo */
 .logo {
-    width: 100px;  /* Ajuste o tamanho da imagem conforme necessário */
-    margin-bottom: 20px;  /* Espaçamento abaixo da logo */
+    width: 100px; 
+    margin-bottom: 20px;
 }
 
-/* Título da Página */
 .login-container h1 {
     color: #d32f2f;
     margin-bottom: 20px;
     font-size: 24px;
 }
 
-/* Campos de Entrada */
 .input-field {
     width: 100%;
     padding: 10px;
@@ -49,13 +61,11 @@ body {
     font-size: 16px;
 }
 
-/* Efeito de Foco nos Campos de Entrada */
 .input-field:focus {
     border-color: #d32f2f;
     outline: none;
 }
 
-/* Botão de Login */
 .login-button {
     width: 100%;
     padding: 12px;
@@ -68,19 +78,16 @@ body {
     transition: background-color 0.3s;
 }
 
-/* Efeito Hover no Botão de Login */
 .login-button:hover {
     background-color: #c62828;
 }
 
-/* Rodapé */
 .footer {
     margin-top: 20px;
     font-size: 14px;
     color: #555;
 }
 
-/* Link no Rodapé */
 .footer a {
     color: #d32f2f;
     text-decoration: none;
