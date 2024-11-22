@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; 
+}
+
+.header {
+    background-color: #e53935; 
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.header p {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.container {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stat-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 48%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.8em;
+    border-bottom: 2px solid #e53935;
+    padding-bottom: 10px;
+}
+
+.card h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+
+.stats-item {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.client-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+.client-list li {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+.client-list li:hover {
+    color: #e53935;
+    cursor: pointer;
+}
+
+.add-product-button {
+    background-color: #e53935;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.add-product-button:hover {
+    background-color: #c62828;
+    transform: scale(1.05);
+}
+
+.add-product-icon {
+    font-size: 2.5em;
+    color: #e53935;
+}
+
+@media (max-width: 768px) {
+    .stat-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+    
+        margin-bottom: 20px;
+    }
+
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .header p {
+        font-size: 1em;
+    }
+}
