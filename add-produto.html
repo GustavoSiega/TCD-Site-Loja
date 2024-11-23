@@ -1,61 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/img/logo-loja.png">
-    <title>Novo Produto</title>
-    <link rel="stylesheet" href="./assets/css/add-produto.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/img/logo-loja.png">
+  <title>Novo Produto</title>
+  <link rel="stylesheet" href="./assets/css/add-produto.css">
 </head>
 
 <body>
-    <header>
-        <div class="logo-container">
-            <div class="store-name">
-                <h1>Adicionar Novo Produto</h1>
-            </div>
+  <header>
+    <div class="logo-container">
+      <div class="header">
+        <img src="./assets/img/logo-loja.png" alt="Logo" class="logo">
+        <span class="title">Adicionar Novo Produto</span>
+      </div>
+    </div>
+  </header>
+
+  <section class="add-product">
+    <div class="form-container">
+      <h2>Detalhes do Produto</h2>
+      <form action="#" method="POST" onsubmit="return showConfirmationMessage(event)">
+        <div class="form-group">
+          <label for="product-name">Nome do Produto</label>
+          <input type="text" id="product-name" name="product-name" required>
         </div>
-    </header>
 
-    <section class="add-product">
-        <div class="form-container">
-            <h2>Detalhes do Produto</h2>
-            <form action="#" method="POST">
-                <div class="form-group">
-                    <label for="product-name">Nome do Produto</label>
-                    <input type="text" id="product-name" name="product-name" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="product-image">Imagem do Produto (URL)</label>
-                    <input type="url" id="product-image" name="product-image" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="product-description">Descrição</label>
-                    <textarea id="product-description" name="product-description" rows="4" required></textarea>
-                </div>
-
-                <div class="form-group">
-                    <label for="product-price">Preço</label>
-                    <input type="number" id="product-price" name="product-price" step="0.01" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="product-category">Categoria</label>
-                    <select id="product-category" name="product-category" required>
-                        <option value="camisetas">Camisetas</option>
-                        <option value="calcas">Calças</option>
-                        <option value="bones">Bonés</option>
-                        <option value="conjuntos">Conjuntos</option>
-                    </select>
-                </div>
-
-                <button type="submit" class="submit-btn">Adicionar Produto</button>
-            </form>
+        <div class="form-group">
+          <label for="product-image">Imagem do Produto</label>
+          <input type="file" id="product-image" name="product-image" accept="image/*" required>
         </div>
-    </section>
 
+        <div class="form-group">
+          <label for="product-description">Descrição</label>
+          <textarea id="product-description" name="product-description" rows="4" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="product-price">Preço</label>
+          <input type="number" id="product-price" name="product-price" step="0.01" required>
+        </div>
+
+        <div class="form-group">
+          <label for="product-category">Categoria</label>
+          <select id="product-category" name="product-category" required>
+            <option value="camisetas">Camisetas</option>
+            <option value="calcas">Calças</option>
+            <option value="bones">Bonés</option>
+            <option value="conjuntos">Conjuntos</option>
+          </select>
+        </div>
+
+        <button type="submit" class="submit-btn">Adicionar Produto</button>
+      </form>
+    </div>
+  </section>
+
+  <div id="confirmation-modal" class="modal">
+    <div class="modal-content">
+      <p>Produto <span id="product-name-display"></span> adicionado com sucesso à loja!</p>
+      <button onclick="closeModal()">OK</button>
+    </div>
+  </div>
+
+  <script>
+      function showConfirmationMessage(event) {
+      event.preventDefault();
+      const productName = document.getElementById('product-name').value;
+      document.getElementById('product-name-display').textContent = productName;
+      document.getElementById('confirmation-modal').style.display = 'flex';
+      document.querySelector('form').reset(); 
+    }
+
+    function closeModal() {
+      document.getElementById('confirmation-modal').style.display = 'none';
+    }
+  </script>
 </body>
-
 </html>

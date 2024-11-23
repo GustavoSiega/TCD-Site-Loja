@@ -12,14 +12,15 @@
     <div class="login-container">
         <img src="./assets/img/logo-loja.png" alt="Logo da JORDANI MODA MASCULINA" class="logo">
         <h1>JORDANI MODA MASCULINA</h1>
-        <form action="dashboard.html" method="POST">
+        <form id="loginForm">
             <input type="text" name="username" class="input-field" placeholder="Usuário" required>
             <input type="password" name="password" class="input-field" placeholder="Senha" required>
-            <button class="login-button" onclick="window.open('dashboard.html', '_blank')">Entrar</button>
+            <button type="button" class="login-button" onclick="window.location.href='dashboard.html'">Entrar</button>
         </form>
         <div class="footer">
             <p><a href="#">Esqueceu a senha?</a></p>
         </div>
     </div>
+
 </body>
 </html>

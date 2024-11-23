@@ -1,91 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/img/logo-loja.png">
-    <title>Dashboard Loja</title>
-    <link rel="stylesheet" href="./assets/css/dashboard.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/img/logo-loja.png">
+  <title>Controle Financeiro do Caixa</title>
+  <link rel="stylesheet" href="./assets/css/dashboard.css">
 </head>
-
 <body>
-    <div class="header">
-        <h1>Bem-vindo, Jordani!</h1>
-        <p>Vamos acompanhar os dados da loja.</p>
+  <header>
+    <div class="header-container">
+      <img src="./assets/img/logo-loja.png" alt="Logo da Loja" class="logo">
+      <h1>Controle Financeiro do Caixa</h1>
     </div>
-    <div class="container">
+  </header>
 
-        <div class="stat-cards">
-            <div class="card stats">
-                <h2>Estatísticas de Vendas</h2>
-                <div class="stats-item">
-                    <strong>Vendas no Mês:</strong> 320 itens
-                </div>
-                <div class="stats-item">
-                    <strong>Saldo no Caixa:</strong> R$ 15.450,00
-                </div>
-                <div class="stats-item">
-                    <strong>Pedidos para Entregar:</strong> 45
-                </div>
-                <div class="stats-item">
-                    <strong>Pedidos Pendentes:</strong> 12
-                </div>
-                <div class="stats-item">
-                    <strong>Produtos no Estoque:</strong> 1.200
-                </div>
-                <div class="stats-item">
-                    <strong>Lucro do Mês:</strong> R$ 7.350,00
-                </div>
-            </div>
+  <main>
 
-            <div class="card stats">
-                <h2>Contas e Clientes</h2>
-                <div class="stats-item">
-                    <strong>Clientes Devendo:</strong> 15 clientes
-                </div>
-                <div class="stats-item">
-                    <strong>Valor a Receber:</strong> R$ 5.200,00
-                </div>
-                <div class="stats-item">
-                    <strong>Contas a Pagar:</strong> R$ 3.150,00
-                </div>
-                <div class="stats-item">
-                    <strong>Contas Pagas no Mês:</strong> R$ 1.500,00
-                </div>
-                <div class="stats-item">
-                    <strong>Parcelas Pendentes:</strong> 8
-                </div>
-
-                <div>
-                    <h2>Lista de Clientes Devendo</h2>
-                    <ul class="client-list">
-                        <li>João Silva - R$ 1.200,00</li>
-                        <li>Ana Oliveira - R$ 850,00</li>
-                        <li>Paulo Santos - R$ 500,00</li>
-                        <li>Carla Souza - R$ 1.800,00</li>
-                        <li>Lucas Pereira - R$ 650,00</li>
-                        <li>Maria Costa - R$ 1.150,00</li>
-                        <li>Fernanda Almeida - R$ 400,00</li>
-                        <li>Renato Rocha - R$ 1.000,00</li>
-                        <li>Juliana Lima - R$ 900,00</li>
-                        <li>Ricardo Martins - R$ 300,00</li>
-                    </ul>
-                </div>
-            </div>
+    <section class="grid-section">
+        <h2>Saldo da Loja</h2>
+        <div class="grid">
+          <div class="grid-item single-info">
+            <span class="info-title">Conta Corrente</span>
+            <span class="info-value">R$ 12.450,00</span>
+          </div>
         </div>
-    </div>
+      </section>
 
-    <div class="container">
-        <div class="card product-item add-new-product">
-            <div class="add-product-icon">
-                <span>+</span>
-            </div>
-            <h3>Adicionar Novo Produto</h3>
-            <p>Clique aqui para adicionar um novo produto à loja.</p>
-            <button class="add-product-button" onclick="window.open('add-produto.html', '_blank')">Adicionar
-                Produto</button>
+    <section class="grid-section">
+      <h2>Vendas e Estoque</h2>
+      <div class="grid">
+        <div class="grid-item single-info">
+          <span class="info-title">Quantidade de Vendas</span>
+          <span class="info-value">45</span>
         </div>
-    </div>
+        <div class="grid-item single-info">
+          <span class="info-title">Quantidade de Pedidos</span>
+          <span class="info-value">8</span>
+        </div>
+        <div class="grid-item">
+          <h3>Estoque:</h3>
+          <p><strong>Camisas:</strong> 120</p>
+          <p><strong>Calças:</strong> 85</p>
+          <p><strong>Bonés:</strong> 50</p>
+          <p><strong>Conjuntos:</strong> 30</p>
+        </div>
+        <div class="grid-item single-info">
+          <span class="info-title">Compras Novas</span>
+          <span class="info-value">12</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid-section">
+      <h2>Contas</h2>
+      <div class="grid">
+        <div class="grid-item single-info">
+          <span class="info-title">Contas a Receber</span>
+          <span class="info-value">R$ 8.300,00</span>
+        </div>
+        <div class="grid-item">
+          <h3>Detalhes das Contas a Receber:</h3>
+          <ul>
+            <li>Pedidos: R$ 1.200,00</li>
+            <li>Clientes com Débitos: R$ 3.400,00</li>
+            <li>Exportação: R$ 3.700,00</li>
+          </ul>
+        </div>
+        <div class="grid-item single-info">
+          <span class="info-title">Contas a Pagar</span>
+          <span class="info-value">R$ 5.700,00</span>
+        </div>
+        <div class="grid-item">
+          <h3>Detalhes das Contas a Pagar:</h3>
+          <ul>
+            <li>Aluguel: R$ 2.000,00</li>
+            <li>Água: R$ 1.500,00</li>
+            <li>Fornecedores: R$ 1.600,00</li>
+            <li>Marketing: R$ 600,00</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid-section">
+      <h2>Clientes com Débito</h2>
+      <div class="grid">
+        <ul>
+          <li>Gustavo Siega: R$ 200,00</li>
+          <li>Gustavo Siega: R$ 500,00</li>
+          <li>Gustavo Siega: R$ 350,00</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="grid-section">
+      <h2>Adicionar Produto</h2>
+      <div class="grid">
+        <button class="add-product-btn" onclick="window.open('add-produto.html', '_blank')">Adicionar Novo Produto</button>
+      </div>
+    </section>
+  </main>
 </body>
-
 </html>

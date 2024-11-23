@@ -137,7 +137,6 @@ header nav button:hover {
 }
 
 /*ESSA PARTE PESQUISEI NO CHAT */
-
 h2[id^="camisetas"], 
 h2[id^="calcas"], 
 h2[id^="bones"], 
@@ -191,7 +190,7 @@ h2[id^="conjuntos"]::before {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* aqui estou dicionando transição*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* aqui estou adicionando transição*/
 }
 
 .product-item:hover {
