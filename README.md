@@ -15,7 +15,7 @@ O objetivo principal deste projeto foi criar um site funcional e visualmente atr
 - **Design Responsivo:** O layout se ajusta a diferentes tamanhos de tela para uma melhor experiência em dispositivos móveis e desktops.
 - **Interface Usuável: **Foco na organização e usabilidade da estrutura.
 
-###💡 Processo
+### 💡 Processo
 #### Login
 -  Clicar em "Login" leva o usuário (administrador) para uma tela onde ele pode inserir suas credenciais.
 Atualmente, a validação de e-mail e senha ainda não está implementada.
