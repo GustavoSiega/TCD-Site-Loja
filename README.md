@@ -1,7 +1,7 @@
 # Site - Jordani Moda Masculina
 Este projeto foi desenvolvido como parte da Atividade Bimestral (TCD) e consiste em um site para uma loja de roupas masculinas.
 
-##### Link para Visualização: 
+##### Link para Visualização: https://gustavosiega.github.io/TCD-Site-Loja/
 
 ### 📝 Descrição
 O objetivo principal deste projeto foi criar um site funcional e visualmente atrativo para uma loja de roupas online. O desenvolvimento focou na experiência do usuário e no design responsivo, utilizando práticas modernas de front-end.
@@ -19,8 +19,6 @@ O objetivo principal deste projeto foi criar um site funcional e visualmente atr
 #### Login
 -  Clicar em "Login" leva o usuário (administrador) para uma tela onde ele pode inserir suas credenciais.
 Atualmente, a validação de e-mail e senha ainda não está implementada.
-
-<img src="../TCD-Site-Loja/assets/img/tela-login.jpg" />
 
 #### Cadastro de Produtos
 -  A funcionalidade "Enviar Produto" permite ao administrador preencher informações como preço, nome e imagem de novos produtos.
