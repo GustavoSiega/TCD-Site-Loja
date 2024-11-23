@@ -19,7 +19,6 @@ O objetivo principal deste projeto foi criar um site funcional e visualmente atr
 #### Login
 -  Clicar em "Login" leva o usuário (administrador) para uma tela onde ele pode inserir suas credenciais.
 Atualmente, a validação de e-mail e senha ainda não está implementada.
-https://i.imgur.com/h9Fr1qT.jpeg
 
 #### Cadastro de Produtos
 -  A funcionalidade "Enviar Produto" permite ao administrador preencher informações como preço, nome e imagem de novos produtos.
