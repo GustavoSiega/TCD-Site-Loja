@@ -20,7 +20,7 @@ O objetivo principal deste projeto foi criar um site funcional e visualmente atr
 -  Clicar em "Login" leva o usuário (administrador) para uma tela onde ele pode inserir suas credenciais.
 Atualmente, a validação de e-mail e senha ainda não está implementada.
 
-<img src="../TCD-Site-Loja/assets/img/tela-login.jpg">
+<img src="../TCD-Site-Loja/assets/img/tela-login.jpg" />
 
 #### Cadastro de Produtos
 -  A funcionalidade "Enviar Produto" permite ao administrador preencher informações como preço, nome e imagem de novos produtos.
